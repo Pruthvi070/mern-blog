@@ -32,22 +32,24 @@ export default function Header() {
           <FaMoon />
         </button>
         <Link to="/sign-in">
-          <Button className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-            Sign In
-          </Button>
+        <button className="px-4 py-2 text-white font-semibold rounded-lg bg-gradient-to-r from-purple-500 to-blue-500 shadow-md hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+  Sign In
+</button>
+
+
         </Link>
         <Navbar.Toggle />
       </div>
 
       <Navbar.Collapse>
         <div className="flex space-x-4">
-          <Navbar.Link active={pathname === "/"} as={"div"}>
+          <Navbar.Link active={pathname === "/"} as={'div'}>
             <Link to="/">Home</Link>
           </Navbar.Link>
-          <Navbar.Link active={pathname === "/about"} as={"div"}>
+          <Navbar.Link active={pathname === "/about"} as={'div'}>
             <Link to="/about">About</Link>
           </Navbar.Link>
-          <Navbar.Link active={pathname === "/projects"} as={"div"}>
+          <Navbar.Link active={pathname === "/projects"} as={'div'}>
             <Link to="/projects">Projects</Link>
           </Navbar.Link>
         </div>
